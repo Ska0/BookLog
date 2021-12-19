@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Ska's Book Log</title>
+  </head>
+  <body>
+    <div class="header"><img src="logo.png" alt="logo" /></div>
+    <div class="container">
+      <div class="sidebar">
+        <div id="bookForm" class="modal">
+          <div class="modal-content">
+            <form>
+              <label for="book">Book: </label>
+              <input type="text" name="book" id="book" />
+              <label for="author">Author:</label>
+              <input type="text" name="author" id="author" />
+              <label for="pages">Pages: </label>
+              <input type="number" name="pages" id="pages" />
+              <label for="read">Read: </label>
+              <input type="checkbox" name="read" id="read" />
+            </form>
+            <button type="button" class="submit-button">Submit</button>
+            <button type="button" class="cancel-button">Cancel</button>
+          </div>
+        </div>
+        <button class="new-book-button"><img src="add.png" /></button>
+      </div>
+      <div class="library"></div>
+    </div>
+    <div class="footer">Copyright © 2021 Jonathan Towery</div>
+  </body>
+</html>
