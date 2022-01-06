@@ -10,20 +10,34 @@ let bookButton = document.querySelector(".new-book-button");
 const library = document.querySelector(".library");
 
 
-//Book Object constructor
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    
+  }
+
+  isRead = () => this.read == false ? this.read = true : this.read = false;
+  
+
 }
-Book.prototype.toggle = function () {
-  this.read === true ? (this.read = false) : (this.read = true);
-  updateLibrary();
-};
-Book.prototype.info = function () {
-  return Object.values(this);
-};
+
+//Book Object constructor
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
+// }
+// Book.prototype.toggle = function () {
+//   this.read === true ? (this.read = false) : (this.read = true);
+//   updateLibrary();
+// };
+// Book.prototype.info = function () {
+//   return Object.values(this);
+// };
 
 
 // Events
@@ -48,7 +62,7 @@ library.addEventListener("click", (e) => {
     console.log(e);
     myLibrary.splice(book, 1);
   } else if (toggle != undefined) {
-    myLibrary[toggle].toggle();
+    myLibrary[toggle].isRead();
   }
   updateLibrary();
 });

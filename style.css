@@ -3,7 +3,6 @@
 }
 
 body {
-   background-color: #39413e;
    margin: 0;
 }
 
@@ -28,10 +27,10 @@ form {
 
 .header {
    height: 10vh;
-   background-color: #39413e;
+   background-color: #00000060;
    display: flex;
    padding: 10px 30px;
-   border-bottom: 2px solid lightslategray;
+   border-bottom: 2px solid rgb(55, 62, 70);
    outline: 1px solid rgb(68, 66, 66);
 }
 
@@ -46,13 +45,14 @@ form {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border-right: 2px solid rgb(86, 94, 102);
-  }
+   background-color: #101113;
+   border-right: 2px solid #222529;
+}
 
 .new-book-button {
    width: 58px;
    height: 58px;
-   background-color: #484d55;
+   background-color: #0b0c0ed5;
    font-size: 20px;
    font-weight: bold;
    display: flex;
@@ -64,7 +64,7 @@ form {
 
 .library {
    width: 90vw;
-   background-color: rgba(119, 136, 153, 0.555);
+   background-color: #0b0c0ed5;
    display: flex;
    justify-content:flex-start;
    flex-flow: row wrap;
